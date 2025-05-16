@@ -73,9 +73,9 @@ namespace UnityEssentials
     {
         public event Action<float> Progressed;
 
-        private const float c_ratio = 1f;
+        private const float Ratio = 1f;
 
         public void Report(float value) =>
-            Progressed?.Invoke(value / c_ratio);
+            Progressed?.Invoke(value / Ratio);
     }
 }
