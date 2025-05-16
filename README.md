@@ -16,7 +16,7 @@ All utilities are under the `UnityEssentials` namespace. This keeps your project
 using UnityEssentials;
 ```
 
-# SceneGroupManager  
+# Scene Loader  
 Handles loading and unloading of multiple Unity scenes (both regular and Addressable) in a group, with progress reporting and event notifications.
 
 ## Usage Examples
