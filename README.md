@@ -14,7 +14,7 @@ All utilities are under the `UnityEssentials` namespace. This keeps your project
 
 ```csharp
 using UnityEssentials;
-
+```
 
 # SceneGroupManager
 
