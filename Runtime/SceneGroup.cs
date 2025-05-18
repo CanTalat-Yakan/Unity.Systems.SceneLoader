@@ -9,7 +9,7 @@ namespace UnityEssentials
     [CreateAssetMenu(fileName = "SceneGroup_", menuName = "SceneLoader/Group", order = 1)]
     public class SceneGroup : ScriptableObject
     {
-        public SerializeDictionary<SceneReference, SceneType> Scenes;
+        public SerializedDictionary<SceneReference, SceneType> Scenes;
 
         public string FindSceneNameByType(SceneType sceneType) =>
             Scenes.FirstOrDefault(scene => scene.Value == sceneType).Key.Name;
