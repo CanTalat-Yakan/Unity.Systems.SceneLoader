@@ -5,6 +5,21 @@ using UnityEngine;
 namespace UnityEssentials
 {
     /// <summary>
+    /// Represents a mechanism for reporting and handling progress updates as a percentage.
+    /// </summary>
+    /// <remarks>This class implements <see cref="IProgress{T}"/> to provide progress updates as a
+    /// floating-point value. The progress value is normalized by a predefined ratio before being reported.</remarks>
+    public class LoadingProgress : IProgress<float>
+    {
+        public event Action<float> Progressed;
+
+        private const float Ratio = 1f;
+
+        public void Report(float value) =>
+            Progressed?.Invoke(value / Ratio);
+    }
+
+    /// <summary>
     /// Provides functionality for managing and loading scene groups asynchronously in a Unity application.
     /// </summary>
     /// <remarks>The <see cref="SceneLoader"/> class is responsible for handling the loading and unloading of
@@ -99,15 +114,5 @@ namespace UnityEssentials
             await Manager.LoadScenes(_sceneGroup, progress);
             _isLoading = false;
         }
-    }
-
-    public class LoadingProgress : IProgress<float>
-    {
-        public event Action<float> Progressed;
-
-        private const float Ratio = 1f;
-
-        public void Report(float value) =>
-            Progressed?.Invoke(value / Ratio);
     }
 }
