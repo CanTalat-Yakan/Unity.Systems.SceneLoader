@@ -80,16 +80,15 @@ namespace UnityEssentials
         public async Task LoadScenes(SceneGroup group, IProgress<float> progress, bool reloadDuplicateScenes = false)
         {
             ActiveSceneGroup = group;
+
             var loadedScenes = new List<string>();
+            var operationGroup = new AsyncOperationGroup(1);
 
             await UnloadScenes();
 
             var sceneCount = SceneManager.sceneCount;
-
             for (var i = 0; i < sceneCount; i++)
                 loadedScenes.Add(SceneManager.GetSceneAt(i).name);
-
-            var operationGroup = new AsyncOperationGroup(1);
 
             foreach (var entry in ActiveSceneGroup.Scenes)
             {
