@@ -6,7 +6,10 @@
   "unity": "2022.1",
   "unityRelease": "",
   "dependencies": {
-    "com.unityessentials.core": "1.0.0"
+    "com.unityessentials.core": "1.0.0",
+    "com.unity.addressables": "2.5.0",
+    "com.unityessentials.scenereferencer": "1.0.0",
+    "com.unityessentials.serializeddictionary": "1.0.0"
   },
   "keywords": [],
   "author": {
