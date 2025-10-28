@@ -1,15 +1,12 @@
 {
   "name": "com.unityessentials.sceneloader",
   "version": "1.0.0",
-  "displayName": "UnityEssenstials SceneLoader",
+  "displayName": "Unity Systems SceneLoader",
   "description": "This is a part of the UnityEssentials Ecosystem",
-  "unity": "2022.1",
+  "unity": "6000.0",
   "unityRelease": "",
   "dependencies": {
-    "com.unityessentials.core": "1.0.0",
-    "com.unity.addressables": "2.5.0",
-    "com.unityessentials.scenereferencer": "1.0.0",
-    "com.unityessentials.serializeddictionary": "1.0.0"
+    "com.unity.addressables": "2.7.4"
   },
   "keywords": [],
   "author": {
