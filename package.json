@@ -1,7 +1,7 @@
 {
-  "name": "com.unityessentials.sceneloader",
-  "version": "1.0.0",
-  "displayName": "Unity Systems SceneLoader",
+  "name": "com.unityessentials.systems.sceneloader",
+  "version": "2.0.0",
+  "displayName": "Systems SceneLoader",
   "description": "This is a part of the UnityEssentials Ecosystem",
   "unity": "6000.0",
   "unityRelease": "",
