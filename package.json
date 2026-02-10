@@ -6,7 +6,9 @@
   "unity": "6000.0",
   "unityRelease": "",
   "dependencies": {
-    "com.unity.addressables": "2.7.4"
+    "com.unity.addressables": "2.8.0",
+    "com.unityessentials.editor.drawer.scenereferencer": "2.0.0",
+    "com.unityessentials.editor.drawer.serializeddictionary": "2.0.0"
   },
   "keywords": [],
   "author": {
