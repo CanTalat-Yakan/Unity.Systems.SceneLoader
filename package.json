@@ -1,14 +1,14 @@
 {
   "name": "com.unityessentials.systems.sceneloader",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "displayName": "Systems SceneLoader",
   "description": "This is a part of the UnityEssentials Ecosystem",
   "unity": "6000.0",
   "unityRelease": "",
   "dependencies": {
-    "com.unity.addressables": "2.8.0",
-    "com.unityessentials.editor.drawer.scenereferencer": "2.0.0",
-    "com.unityessentials.editor.drawer.serializeddictionary": "2.0.0"
+    "com.unity.addressables": "~2.8.0",
+    "com.unityessentials.editor.drawer.scenereferencer": "~2.0.0",
+    "com.unityessentials.editor.drawer.serializeddictionary": "~2.0.0"
   },
   "keywords": [],
   "author": {
